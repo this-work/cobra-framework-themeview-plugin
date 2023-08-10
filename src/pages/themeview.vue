@@ -323,6 +323,9 @@ export default {
         font-size: unitize(12px);
         font-weight: bold;
         margin-bottom: spacing('20');
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
         @include color-theme('copytext');
     }
     &__component-line {
