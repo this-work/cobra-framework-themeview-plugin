@@ -49,7 +49,7 @@
                 <h2 class="themeview__component-heading">headline</h2>
 
                 <div class="themeview__component-line" >
-                    <p class="themeview__component--headline">headline</p>
+                    <p class="themeview__component--headline">headline - h2</p>
                 </div>
 
             </div>
@@ -141,35 +141,35 @@
                 <div class="themeview__component-line" >
                     <c-button label="Button" disabled appearance="primary" />
                 </div>
-
+                <br>
                 <div class="themeview__component-line" >
                     <c-button label="Button" icon="arrowForward" appearance="primary" />
                 </div>
                 <div class="themeview__component-line" >
                     <c-button label="Button" icon="arrowForward" disabled appearance="primary" />
                 </div>
-
+                <br>
                 <div class="themeview__component-line" >
                     <c-button label="Button" icon="arrowBack" iconPosition="left" appearance="primary" />
                 </div>
                 <div class="themeview__component-line" >
                     <c-button label="Button" icon="arrowBack" iconPosition="left" disabled appearance="primary" />
                 </div>
-
+                <br>
                 <div class="themeview__component-line" >
                     <c-button label="Button" size="big" appearance="primary" />
                 </div>
                 <div class="themeview__component-line" >
                     <c-button label="Button" size="big" disabled appearance="primary" />
                 </div>
-
+                <br>
                 <div class="themeview__component-line" >
                     <c-button label="Button" size="big" icon="arrowForward" appearance="primary" />
                 </div>
                 <div class="themeview__component-line" >
                     <c-button label="Button" size="big" icon="arrowForward" disabled appearance="primary" />
                 </div>
-
+                <br>
                 <div class="themeview__component-line" >
                     <c-button label="Button" size="big"  icon="arrowBack" iconPosition="left" appearance="primary" />
                 </div>
@@ -189,35 +189,35 @@
                 <div class="themeview__component-line" >
                     <c-button label="Button" disabled appearance="secondary" />
                 </div>
-
+                <br>
                 <div class="themeview__component-line" >
                     <c-button label="Button" icon="arrowForward" appearance="secondary" />
                 </div>
                 <div class="themeview__component-line" >
                     <c-button label="Button" icon="arrowForward" disabled appearance="secondary" />
                 </div>
-
+                <br>
                 <div class="themeview__component-line" >
                     <c-button label="Button" icon="arrowBack" iconPosition="left" appearance="secondary" />
                 </div>
                 <div class="themeview__component-line" >
                     <c-button label="Button" icon="arrowBack" iconPosition="left" disabled appearance="secondary" />
                 </div>
-
+                <br>
                 <div class="themeview__component-line" >
                     <c-button label="Button" size="big" appearance="secondary" />
                 </div>
                 <div class="themeview__component-line" >
                     <c-button label="Button" size="big" disabled appearance="secondary" />
                 </div>
-
+                <br>
                 <div class="themeview__component-line" >
                     <c-button label="Button" size="big" icon="arrowForward" appearance="secondary" />
                 </div>
                 <div class="themeview__component-line" >
                     <c-button label="Button" size="big" icon="arrowForward" disabled appearance="secondary" />
                 </div>
-
+                <br>
                 <div class="themeview__component-line" >
                     <c-button label="Button" size="big"  icon="arrowBack" iconPosition="left" appearance="secondary" />
                 </div>
@@ -254,9 +254,12 @@ export default {
 <style lang="scss">
 .themeview {
     display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
     &__section {
         display: block;
         width: 33.3332%;
+        min-width: unitize(450px);
         @include color-theme('background');
     }
     &__heading {
