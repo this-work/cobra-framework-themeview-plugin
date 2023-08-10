@@ -1,29 +1,27 @@
-# README #
+# Cobra Framework Themeview Plugin
+Theme example page for the nuxt projects based on the created color palette
 
-This README would normally document whatever steps are necessary to get your application up and running.
 
-### What is this repository for? ###
+### Requirements
+- Nuxt
+- Cobra-Framework
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-### How do I get set up? ###
+### Usage in Nuxt
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Install framework dependencies
+``` bash
+$ npm install @this/cobra-framework-themeview-plugin
+```
 
-### Contribution guidelines ###
+Add module in nuxt.config.js
+``` js
+buildModules: [
+    ['@this/cobra-framework-themeview-plugin/nuxt'],
+]
+```
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+In Nuxt Dev Mode a theme page is accessible at
+``` html
+localhost:3000/theme
+```

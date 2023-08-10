@@ -1,0 +1,32 @@
+{
+  "name": "@this/cobra-framework-themeview-plugin",
+  "version": "1.0.0",
+  "author": "THIS GmbH",
+  "repository": "https://bitbucket.org/this-work/cobra-framework-themeview-plugin/src/master/README.md",
+  "description": "Theme example page for the nuxt projects based on the color palette",
+  "keywords": [
+    "scss",
+    "vue",
+    "nuxt",
+    "cobra",
+    "theme",
+    "html",
+    "companion",
+    "plugin",
+    "framework"
+  ],
+  "license": "MIT",
+  "files": [
+    "src",
+    "nuxt"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^7.15.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-property-sort-order-smacss": "^7.1.0",
+    "stylelint-config-recommended-scss": "^4.3.0",
+    "stylelint-scss": "^3.20.1"
+  }
+}
