@@ -23,5 +23,5 @@ buildModules: [
 
 In Nuxt Dev Mode a theme page is accessible at
 ``` html
-localhost:3000/theme
+localhost:3000/themeview
 ```

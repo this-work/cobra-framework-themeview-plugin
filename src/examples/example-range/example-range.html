@@ -1,0 +1,18 @@
+<example-component :class="blockClasses" title="range">
+
+    <section>
+        <span :class="element('label')">Default</span>
+        <c-input-range :value="100" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Disabled</span>
+        <c-input-range :value="100" :disabled="true" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Background</span>
+        <c-input-range :class="modifier('only-background')" :value="0" :min="0" :max="0" />
+    </section>
+
+</example-component>

@@ -1,0 +1,44 @@
+////
+///
+/// example-range Styles
+///
+/// @group Themeview
+///
+////
+
+.example-range {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    section + section {
+        margin-top: unitize(27px);
+    }
+
+    &__label {
+        margin-top: unitize(14px);
+        @include color-theme('copytext');
+    }
+
+    .c-input-range {
+        border-right-color: currentColor !important;
+        pointer-events: none !important;
+    }
+
+    .c-input-range__knob {
+        display: none !important;
+    }
+    // #endregion
+
+    // #region [Modifier]
+    &--only-background {
+        border: 0 !important;
+    }
+    // #endregion
+}

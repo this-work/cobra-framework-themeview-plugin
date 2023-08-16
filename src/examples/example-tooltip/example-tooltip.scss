@@ -1,0 +1,24 @@
+////
+///
+/// example-tooltip Styles
+///
+/// @group Themeview
+///
+////
+
+.example-tooltip {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    .c-tooltip__box {
+        display: inline-block !important;
+        position: static !important;
+        transform: unset !important;
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

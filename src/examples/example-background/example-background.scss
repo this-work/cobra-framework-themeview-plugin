@@ -1,0 +1,25 @@
+////
+///
+/// example-background Styles
+///
+/// @group Themeview
+///
+////
+
+.example-background {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    &__background {
+        display: block;
+        width: 100%;
+        height: unitize(80px);
+        border: 1px solid rgba(180,180,180,.2);
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

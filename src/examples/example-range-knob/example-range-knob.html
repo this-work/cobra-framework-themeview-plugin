@@ -1,0 +1,13 @@
+<example-component :class="blockClasses" title="range-knob">
+
+    <section>
+        <span :class="element('label')">Default</span>
+        <c-input-range :value="0" :min="0" :max="0" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Disabled</span>
+        <c-input-range :value="0" :min="0" :max="0" :disabled="true" />
+    </section>
+
+</example-component>

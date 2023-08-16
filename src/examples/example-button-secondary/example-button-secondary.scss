@@ -1,0 +1,31 @@
+////
+///
+/// example-button-secondary Styles
+///
+/// @group Themeview
+///
+////
+
+.example-button-secondary {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    section + section {
+        margin-top: unitize(27px);
+    }
+
+    .c-button + .c-button {
+        margin-top: unitize(10px) !important;
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

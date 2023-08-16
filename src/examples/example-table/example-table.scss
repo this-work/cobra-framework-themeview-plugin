@@ -1,0 +1,20 @@
+////
+///
+/// example-table Styles
+///
+/// @group Themeview
+///
+////
+
+.example-table {
+    // #region [Block]
+    $module: &;
+    @include color-theme('copytext');
+    // #endregion
+
+    // #region [Element]
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

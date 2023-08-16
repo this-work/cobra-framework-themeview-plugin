@@ -1,0 +1,27 @@
+////
+///
+/// example-hotspot-item Styles
+///
+/// @group Themeview
+///
+////
+
+.example-hotspot-item {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    .m-hotspot {
+        grid-template-columns: unitize(0px) unitize(0px) unitize(44px) unitize(0px) unitize(0px) !important;
+        padding: unitize(22px) 0 !important;
+    }
+
+    .module__background {
+        display: none;
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

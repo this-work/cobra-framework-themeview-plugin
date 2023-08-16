@@ -1,0 +1,24 @@
+////
+///
+/// example-link Styles
+///
+/// @group Themeview
+///
+////
+
+.example-link {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    a {
+        display: inline-block;
+        @include responsive-font('copytext');
+        @include color-theme('link');
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

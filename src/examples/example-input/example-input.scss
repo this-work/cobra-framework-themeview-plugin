@@ -1,0 +1,53 @@
+////
+///
+/// example-input Styles
+///
+/// @group Themeview
+///
+////
+
+.example-input {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    &__group {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        & + & {
+            margin-top: unitize(71px);
+        }
+    }
+
+    &__group section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+
+        & + section {
+            margin-top: unitize(27px);
+        }
+
+        > * + * {
+            margin-right: unitize(44px) !important;
+        }
+    }
+
+    &__label {
+        width: unitize(250px);
+        @include color-theme('copytext');
+    }
+
+    .c-input-text {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

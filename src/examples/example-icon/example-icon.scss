@@ -1,0 +1,21 @@
+////
+///
+/// example-icon Styles
+///
+/// @group Themeview
+///
+////
+
+.example-icon {
+    // #region [Block]
+    $module: &;
+    @include responsive-font('copytext');
+    @include color-theme('copytext');
+    // #endregion
+
+    // #region [Element]
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}
