@@ -1,0 +1,24 @@
+////
+///
+/// example-blockquote Styles
+///
+/// @group Themeview
+///
+////
+
+.example-blockquote {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    blockquote {
+        margin: 0 !important;
+        @include responsive-font('h1');
+        @include color-theme('blockqoute');
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

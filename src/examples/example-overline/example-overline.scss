@@ -1,0 +1,23 @@
+////
+///
+/// example-overline Styles
+///
+/// @group Themeview
+///
+////
+
+.example-overline {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    p {
+        @include responsive-font('overline');
+        @include color-theme('overline');
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

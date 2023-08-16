@@ -1,0 +1,28 @@
+<example-component :class="blockClasses" title="button-icon">
+
+    <section>
+        <span :class="element('label')">Default</span>
+        <c-button icon="arrowBack" appearance="icon" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Default Disabled</span>
+        <c-button icon="arrowBack" appearance="icon" disabled />
+    </section>
+
+    <section>
+        <span :class="element('label')">Download</span>
+        <c-download appearance="icon" :buttonLabel="false" url="javascript: void(0)" />
+    </section>
+
+    <section :class="element('fill-the-blanks')">
+        <span :class="element('label')">Fill-the-blanks</span>
+        <c-button :class="['i-fill-the-blanks__dropdown-button', 'i-fill-the-blanks__dropdown-button--icon']" tag="button" appearance="icon" />
+    </section>
+
+    <section :class="element('fill-the-blanks')">
+        <span :class="element('label')">Fill-the-blanks Disabled</span>
+        <c-button :class="['i-fill-the-blanks__dropdown-button', 'i-fill-the-blanks__dropdown-button--icon']" tag="button" appearance="icon" disabled />
+    </section>
+
+</example-component>

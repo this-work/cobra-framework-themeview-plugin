@@ -1,6 +1,6 @@
 {
     "name": "@this/cobra-framework-themeview-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "THIS GmbH",
     "repository": "https://bitbucket.org/this-work/cobra-framework-themeview-plugin/src/master/README.md",
     "description": "Theme example page for the nuxt projects based on the color palette",

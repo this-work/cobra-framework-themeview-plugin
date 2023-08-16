@@ -4,229 +4,43 @@
         <section v-for="(theme, index) in this.$styling.themes" :class="`themeview__section theme-${theme}`">
             <h2 class="themeview__heading">Theme {{ theme }}</h2>
 
-            <div class="themeview__component">
-
-                <h2 class="themeview__component-heading">background</h2>
-
-                <div class="themeview__component-line" >
-                    <div class="themeview__component--background"></div>
-                </div>
-
-            </div>
-
-            <div class="themeview__component">
-
-                <h2 class="themeview__component-heading">background-deco</h2>
-
-                <div class="themeview__component-line" >
-                    <div class="themeview__component--background-deco"></div>
-                </div>
-
-            </div>
-
-            <div class="themeview__component" v-if="componentExist('m-interaction')">
-
-                <h2 class="themeview__component-heading">interaction-color</h2>
-
-                <div class="themeview__component-line" >
-                    <div class="themeview__component--interaction-color"></div>
-                </div>
-
-            </div>
-
-            <div class="themeview__component">
-
-                <h2 class="themeview__component-heading">overline</h2>
-
-                <div class="themeview__component-line" >
-                    <p class="themeview__component--overline">overline</p>
-                </div>
-
-            </div>
-
-            <div class="themeview__component">
-
-                <h2 class="themeview__component-heading">headline</h2>
-
-                <div class="themeview__component-line" >
-                    <p class="themeview__component--headline">headline - h2</p>
-                </div>
-
-            </div>
-
-            <div class="themeview__component">
-
-                <h2 class="themeview__component-heading">copytext</h2>
-
-                <div class="themeview__component-line" >
-                    <p class="themeview__component--copytext">copytext</p>
-                </div>
-
-            </div>
-
-            <div class="themeview__component">
-
-                <h2 class="themeview__component-heading">link</h2>
-
-                <div class="themeview__component-line" >
-                    <a href="javascirpt:void(0);" class="themeview__component--link">link</a>
-                </div>
-
-            </div>
-
-            <div class="themeview__component">
-
-                <h2 class="themeview__component-heading">selectiontext</h2>
-
-                <div class="themeview__component-line" >
-                    <p class="themeview__component--copytext">lorem ipsum dolor sit amet</p>
-                </div>
-
-            </div>
-
-            <div class="themeview__component">
-
-                <h2 class="themeview__component-heading">blockqoute</h2>
-
-                <div class="themeview__component-line" >
-                    <blockquote class="themeview__component--blockqoute">Lorem ipsum</blockquote>
-                </div>
-
-            </div>
-
-            <div class="themeview__component">
-
-                <h2 class="themeview__component-heading">icon</h2>
-
-                <div class="themeview__component-line" >
-                    <c-icon name="code" />
-                </div>
-
-            </div>
-
-            <div class="themeview__component">
-
-                <h2 class="themeview__component-heading">media-overlay</h2>
-
-                <div class="themeview__component-line" >
-                    <c-image
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAQAAACx6dw/AAAADUlEQVR42mP8r8YABAAGxgEnx9DQLwAAAABJRU5ErkJggg=="
-                        :overlay="true"
-                    />
-                </div>
-
-            </div>
-
-            <div class="themeview__component">
-
-                <h2 class="themeview__component-heading">skeleton</h2>
-
-                <div class="themeview__component-line" >
-                    <c-image
-                        class="themeview__component--skeleton"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAQAAACx6dw/AAAAC0lEQVR42mNkAAMAAA4AAjOwv9wAAAAASUVORK5CYII="
-                        :skeleton="true"
-                    />
-                </div>
-
-            </div>
-
-            <div class="themeview__component">
-
-                <h2 class="themeview__component-heading">button-primary</h2>
-
-                <div class="themeview__component-line" >
-                    <c-button label="Button" appearance="primary" />
-                </div>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" disabled appearance="primary" />
-                </div>
-                <br>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" icon="arrowForward" appearance="primary" />
-                </div>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" icon="arrowForward" disabled appearance="primary" />
-                </div>
-                <br>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" icon="arrowBack" iconPosition="left" appearance="primary" />
-                </div>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" icon="arrowBack" iconPosition="left" disabled appearance="primary" />
-                </div>
-                <br>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" size="big" appearance="primary" />
-                </div>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" size="big" disabled appearance="primary" />
-                </div>
-                <br>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" size="big" icon="arrowForward" appearance="primary" />
-                </div>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" size="big" icon="arrowForward" disabled appearance="primary" />
-                </div>
-                <br>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" size="big"  icon="arrowBack" iconPosition="left" appearance="primary" />
-                </div>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" size="big"  icon="arrowBack" iconPosition="left" disabled appearance="primary" />
-                </div>
-
-            </div>
-
-            <div class="themeview__component">
-
-                <h2 class="themeview__component-heading">button-secondary</h2>
-
-                <div class="themeview__component-line" >
-                    <c-button label="Button" appearance="secondary" />
-                </div>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" disabled appearance="secondary" />
-                </div>
-                <br>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" icon="arrowForward" appearance="secondary" />
-                </div>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" icon="arrowForward" disabled appearance="secondary" />
-                </div>
-                <br>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" icon="arrowBack" iconPosition="left" appearance="secondary" />
-                </div>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" icon="arrowBack" iconPosition="left" disabled appearance="secondary" />
-                </div>
-                <br>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" size="big" appearance="secondary" />
-                </div>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" size="big" disabled appearance="secondary" />
-                </div>
-                <br>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" size="big" icon="arrowForward" appearance="secondary" />
-                </div>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" size="big" icon="arrowForward" disabled appearance="secondary" />
-                </div>
-                <br>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" size="big"  icon="arrowBack" iconPosition="left" appearance="secondary" />
-                </div>
-                <div class="themeview__component-line" >
-                    <c-button label="Button" size="big"  icon="arrowBack" iconPosition="left" disabled appearance="secondary" />
-                </div>
-
-            </div>
-
+            <example-background />
+            <example-background-deco />
+            <example-interaction-color v-if="componentExist('m-interaction')" />
+            <example-overline />
+            <example-headline />
+            <example-copytext />
+            <example-link />
+            <example-selectiontext />
+            <example-blockquote />
+            <example-icon />
+            <example-media-overlay />
+            <example-skeleton />
+            <example-button-primary />
+            <example-button-secondary />
+            <example-button-pill-dark />
+            <example-button-icon />
+            <example-button-text />
+            <example-input />
+            <example-checkbox />
+            <example-radiobutton />
+            <example-range-knob />
+            <example-range />
+            <example-table />
+            <example-search-button v-if="componentExist('f-search')" />
+            <example-search-field-background v-if="componentExist('f-search')" />
+            <example-search-field v-if="componentExist('f-search')" />
+            <example-tag-pill v-if="componentExist('f-search')" />
+            <example-slider-bullet />
+            <example-slider-controls-fraction />
+            <example-tab-title />
+            <example-tab-thumbnail />
+            <example-tooltip />
+            <example-accordion />
+            <example-timebox v-if="componentExist('c-timebox')" />
+            <example-modal />
+            <example-feedback-icon v-if="componentExist('c-feedback')" />
+            <example-hotspot-item />
         </section>
 
     </main>
@@ -241,9 +55,49 @@ export default {
 
     name: 'themeview',
 
+    components: {
+        'example-background':                 () => import('../examples/example-background/example-background.vue'),
+        'example-background-deco':            () => import('../examples/example-background-deco/example-background-deco.vue'),
+        'example-interaction-color':          () => import('../examples/example-interaction-color/example-interaction-color.vue'),
+        'example-overline':                   () => import('../examples/example-overline/example-overline.vue'),
+        'example-headline':                   () => import('../examples/example-headline/example-headline.vue'),
+        'example-copytext':                   () => import('../examples/example-copytext/example-copytext.vue'),
+        'example-link':                       () => import('../examples/example-link/example-link.vue'),
+        'example-selectiontext':              () => import('../examples/example-selectiontext/example-selectiontext.vue'),
+        'example-blockquote':                 () => import('../examples/example-blockquote/example-blockquote.vue'),
+        'example-icon':                       () => import('../examples/example-icon/example-icon.vue'),
+        'example-media-overlay':              () => import('../examples/example-media-overlay/example-media-overlay.vue'),
+        'example-skeleton':                   () => import('../examples/example-skeleton/example-skeleton.vue'),
+        'example-button-primary':             () => import('../examples/example-button-primary/example-button-primary.vue'),
+        'example-button-secondary':           () => import('../examples/example-button-secondary/example-button-secondary.vue'),
+        'example-button-pill-dark':           () => import('../examples/example-button-pill-dark/example-button-pill-dark.vue'),
+        'example-button-icon':                () => import('../examples/example-button-icon/example-button-icon.vue'),
+        'example-button-text':                () => import('../examples/example-button-text/example-button-text.vue'),
+        'example-input':                      () => import('../examples/example-input/example-input.vue'),
+        'example-checkbox':                   () => import('../examples/example-checkbox/example-checkbox.vue'),
+        'example-radiobutton':                () => import('../examples/example-radiobutton/example-radiobutton.vue'),
+        'example-range-knob':                 () => import('../examples/example-range-knob/example-range-knob.vue'),
+        'example-range':                      () => import('../examples/example-range/example-range.vue'),
+        'example-table':                      () => import('../examples/example-table/example-table.vue'),
+        'example-search-button':              () => import('../examples/example-search-button/example-search-button.vue'),
+        'example-search-field-background':    () => import('../examples/example-search-field-background/example-search-field-background.vue'),
+        'example-search-field':               () => import('../examples/example-search-field/example-search-field.vue'),
+        'example-tag-pill':                   () => import('../examples/example-tag-pill/example-tag-pill.vue'),
+        'example-slider-bullet':              () => import('../examples/example-slider-bullet/example-slider-bullet.vue'),
+        'example-slider-controls-fraction':   () => import('../examples/example-slider-controls-fraction/example-slider-controls-fraction.vue'),
+        'example-tab-title':                  () => import('../examples/example-tab-title/example-tab-title.vue'),
+        'example-tab-thumbnail':              () => import('../examples/example-tab-thumbnail/example-tab-thumbnail.vue'),
+        'example-tooltip':                    () => import('../examples/example-tooltip/example-tooltip.vue'),
+        'example-accordion':                  () => import('../examples/example-accordion/example-accordion.vue'),
+        'example-timebox':                    () => import('../examples/example-timebox/example-timebox.vue'),
+        'example-modal':                      () => import('../examples/example-modal/example-modal.vue'),
+        'example-feedback-icon':              () => import('../examples/example-feedback-icon/example-feedback-icon.vue'),
+        'example-hotspot-item':               () => import('../examples/example-hotspot-item/example-hotspot-item.vue')
+    },
+
     methods: {
         componentExist(name) {
-            let componentList = { ...components };
+            const componentList = { ...components };
             return componentList.hasOwnProperty(pascalcase(name))
         }
     }
@@ -264,73 +118,11 @@ export default {
     }
     &__heading {
         display: block;
-        padding: spacing('44');
+        padding: unitize(44px);
         text-align: center;
         opacity: .3;
         font-weight: bold;
         @include color-theme('copytext');
-    }
-    &__component {
-        display: block;
-        padding: spacing('44');
-        border-bottom: 1px solid rgba(180,180,180,.2);
-
-        &--background {
-            display: block;
-            width: 100%;
-            height: unitize(80px);
-            border: 1px solid rgba(180,180,180,.2);
-        }
-        &--background-deco {
-            display: block;
-            width: 100%;
-            height: unitize(80px);
-            @include color-theme('background-deco');
-        }
-        &--interaction-color {
-            display: block;
-            width: 100%;
-            height: unitize(80px);
-            background: red;
-        }
-        &--overline {
-            @include responsive-font('overline');
-            @include color-theme('overline');
-        }
-        &--headline {
-            @include responsive-font('h2');
-            @include color-theme('headline');
-        }
-        &--copytext {
-            @include responsive-font('copytext');
-            @include color-theme('copytext');
-        }
-        &--link {
-            display: inline-block;
-            @include responsive-font('copytext');
-            @include color-theme('link');
-        }
-        &--blockqoute {
-            @include color-theme('blockqoute');
-        }
-        &--skeleton {
-            .c-image__canvas-skeleton--hide::before {
-                opacity: 1!important;
-            }
-        }
-    }
-    &__component-heading {
-        font-size: unitize(12px);
-        font-weight: bold;
-        margin-bottom: spacing('20');
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        @include color-theme('copytext');
-    }
-    &__component-line {
-        display: block;
-        padding: spacing('10') 0;
     }
 }
 </style>

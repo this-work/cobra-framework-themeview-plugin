@@ -1,0 +1,39 @@
+<example-component :class="blockClasses" title="radiobutton">
+
+    <section>
+        <span :class="element('label')">Default</span>
+        <c-input-radio />
+        <c-input-radio size="big" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Checked</span>
+        <c-input-radio :checked="true" />
+        <c-input-radio :checked="true" size="big" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Disabled</span>
+        <c-input-radio disabled />
+        <c-input-radio disabled size="big" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Disabled Checked</span>
+        <c-input-radio :checked="true" disabled />
+        <c-input-radio :checked="true" disabled size="big" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Error</span>
+        <c-input-radio :checked="true" :valid="false" />
+        <c-input-radio :checked="true" :valid="false" size="big" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Success</span>
+        <c-input-radio class="success" :checked="true" :valid="true" />
+        <c-input-radio class="success" :checked="true" :valid="true" size="big" />
+    </section>
+
+</example-component>

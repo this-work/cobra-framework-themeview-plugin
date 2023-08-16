@@ -1,0 +1,145 @@
+<example-component :class="blockClasses" title="input">
+
+    <section :class="element('group')">
+        <section>
+            <span :class="element('label')">Default</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" />
+        </section>
+
+        <section>
+            <span :class="element('label')">After Text Input</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" value="mailaddress@testmail.com" />
+        </section>
+
+        <section>
+            <span :class="element('label')">Disabled</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" disabled />
+        </section>
+
+        <section>
+            <span :class="element('label')">Invalid / Error</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" value="mailaddress@testmail.com" :valid="false" />
+        </section>
+    </section>
+
+    <section :class="element('group')">
+        <section>
+            <span :class="element('label')">Default</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com">
+                <template #prefix> prefix </template>
+            </c-input-text>
+        </section>
+
+        <section>
+            <span :class="element('label')">After Text Input</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" value="mailaddress@testmail.com">
+                <template #prefix> prefix </template>
+            </c-input-text>
+        </section>
+
+        <section>
+            <span :class="element('label')">Disabled</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" disabled>
+                <template #prefix> prefix </template>
+            </c-input-text>
+        </section>
+
+        <section>
+            <span :class="element('label')">Invalid / Error</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" value="mailaddress@testmail.com" :valid="false">
+                <template #prefix> prefix </template>
+            </c-input-text>
+        </section>
+    </section>
+
+    <section :class="element('group')">
+        <section>
+            <span :class="element('label')">Default</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com">
+                <template #prefix> <c-icon name="info" /> </template>
+            </c-input-text>
+        </section>
+
+        <section>
+            <span :class="element('label')">After Text Input</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" value="mailaddress@testmail.com">
+                <template #prefix> <c-icon name="info" /> </template>
+            </c-input-text>
+        </section>
+
+        <section>
+            <span :class="element('label')">Disabled</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" disabled>
+                <template #prefix> <c-icon name="info" /> </template>
+            </c-input-text>
+        </section>
+
+        <section>
+            <span :class="element('label')">Invalid / Error</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" value="mailaddress@testmail.com" :valid="false">
+                <template #prefix> <c-icon name="info" /> </template>
+            </c-input-text>
+        </section>
+    </section>
+
+    <section :class="element('group')">
+        <section>
+            <span :class="element('label')">Default</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com">
+                <template #suffix> suffix </template>
+            </c-input-text>
+        </section>
+
+        <section>
+            <span :class="element('label')">After Text Input</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" value="mailaddress@testmail.com">
+                <template #suffix> suffix </template>
+            </c-input-text>
+        </section>
+
+        <section>
+            <span :class="element('label')">Disabled</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" disabled>
+                <template #suffix> suffix </template>
+            </c-input-text>
+        </section>
+
+        <section>
+            <span :class="element('label')">Invalid / Error</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" value="mailaddress@testmail.com" :valid="false">
+                <template #suffix> suffix </template>
+            </c-input-text>
+        </section>
+    </section>
+
+    <section :class="element('group')">
+        <section>
+            <span :class="element('label')">Default</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com">
+                <template #suffix> <c-icon name="info" /> </template>
+            </c-input-text>
+        </section>
+
+        <section>
+            <span :class="element('label')">After Text Input</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" value="mailaddress@testmail.com">
+                <template #suffix> <c-icon name="info" /> </template>
+            </c-input-text>
+        </section>
+
+        <section>
+            <span :class="element('label')">Disabled</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" disabled>
+                <template #suffix> <c-icon name="info" /> </template>
+            </c-input-text>
+        </section>
+
+        <section>
+            <span :class="element('label')">Invalid / Error</span>
+            <c-input-text :class="element('input')" appearance="boxed" type="text" label="Your email" placeholder="mailaddress@testmail.com" value="mailaddress@testmail.com" :valid="false">
+                <template #suffix> <c-icon name="info" /> </template>
+            </c-input-text>
+        </section>
+    </section>
+
+</example-component>

@@ -1,0 +1,43 @@
+////
+///
+/// example-button-icon Styles
+///
+/// @group Themeview
+///
+////
+
+.example-button-icon {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+
+        > * + * {
+            margin-right: unitize(44px) !important;
+        }
+    }
+    section + section {
+        margin-top: unitize(27px);
+    }
+
+    &__label {
+        flex-grow: 1;
+        @include color-theme('copytext');
+    }
+
+    &__fill-the-blanks {
+        @if (not map-has-key($default-color-palettes-map, 'fill-the-blanks-dropdown-button')) {
+            display: none !important;
+        }
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

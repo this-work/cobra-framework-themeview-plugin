@@ -1,0 +1,40 @@
+////
+///
+/// example-slider-bullet Styles
+///
+/// @group Themeview
+///
+////
+
+.example-slider-bullet {
+    // #region [Block]
+    $module: &;
+    @include color-theme('copytext');
+    // #endregion
+
+    // #region [Element]
+    .swiper-wrapper {
+        display: none !important;
+    }
+
+    .c-slider__controls {
+        margin: 0 !important;
+    }
+
+    .c-slider__pagination {
+        margin: 0 !important;
+    }
+
+    .c-slider__toolbar-wrapper {
+        justify-content: flex-start !important;
+    }
+
+    .c-slider__next-slide,
+    .c-slider__previous-slide {
+        display: none !important;
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

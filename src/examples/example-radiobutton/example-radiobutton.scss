@@ -1,0 +1,48 @@
+////
+///
+/// example-radiobutton Styles
+///
+/// @group Themeview
+///
+////
+
+.example-radiobutton {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+
+        > * + * {
+            margin-right: unitize(44px) !important;
+        }
+    }
+    section + section {
+        margin-top: unitize(27px);
+    }
+
+    &__label {
+        flex-grow: 1;
+        @include color-theme('copytext');
+    }
+
+    .c-button + .c-button {
+        margin-top: unitize(10px) !important;
+    }
+
+    .c-inpuexample-checkbox {
+        &.error,
+        &.success {
+            display: block !important;
+        }
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

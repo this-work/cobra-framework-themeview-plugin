@@ -1,0 +1,23 @@
+////
+///
+/// example-copytext Styles
+///
+/// @group Themeview
+///
+////
+
+.example-copytext {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    p {
+        @include responsive-font('copytext');
+        @include color-theme('copytext');
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

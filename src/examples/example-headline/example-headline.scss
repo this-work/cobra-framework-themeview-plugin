@@ -1,0 +1,23 @@
+////
+///
+/// example-headline Styles
+///
+/// @group Themeview
+///
+////
+
+.example-headline {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    p {
+        @include responsive-font('h2');
+        @include color-theme('headline');
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

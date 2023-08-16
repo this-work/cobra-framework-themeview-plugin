@@ -1,0 +1,39 @@
+<example-component :class="blockClasses" title="checkbox">
+
+    <section>
+        <span :class="element('label')">Default</span>
+        <c-input-checkbox />
+        <c-input-checkbox size="big" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Checked</span>
+        <c-input-checkbox :checked="true" />
+        <c-input-checkbox :checked="true" size="big" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Disabled</span>
+        <c-input-checkbox disabled />
+        <c-input-checkbox disabled size="big" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Disabled Checked</span>
+        <c-input-checkbox :checked="true" disabled />
+        <c-input-checkbox :checked="true" disabled size="big" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Error</span>
+        <c-input-checkbox :checked="true" :valid="false" />
+        <c-input-checkbox :checked="true" :valid="false" size="big" />
+    </section>
+
+    <section>
+        <span :class="element('label')">Success</span>
+        <c-input-checkbox class="success" :checked="true" :valid="true" />
+        <c-input-checkbox class="success" :checked="true" :valid="true" size="big" />
+    </section>
+
+</example-component>

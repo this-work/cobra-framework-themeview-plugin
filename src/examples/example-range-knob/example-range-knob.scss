@@ -1,0 +1,48 @@
+////
+///
+/// example-range-knob Styles
+///
+/// @group Themeview
+///
+////
+
+.example-range-knob {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    section + section {
+        margin-top: unitize(27px);
+    }
+
+    &__label {
+        flex-grow: 1;
+        @include color-theme('copytext');
+    }
+
+    .c-input-range {
+        $c-input-range--height: unitize(44px) !default;
+
+        width: unitize(44px) + calc($c-input-range--height / 2) !important;
+        min-width: unitize(44px) + calc($c-input-range--height / 2) !important;
+        max-width: unitize(44px) + calc($c-input-range--height / 2) !important;
+        margin-left: calc($c-input-range--height / 2) !important;
+        background-color: transparent !important;
+        border: unset !important;
+    }
+
+    .c-input-range__track {
+        background-color: transparent !important;
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

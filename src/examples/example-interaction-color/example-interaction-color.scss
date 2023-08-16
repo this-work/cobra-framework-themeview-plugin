@@ -1,0 +1,25 @@
+////
+///
+/// example-interaction-color Styles
+///
+/// @group Themeview
+///
+////
+
+.example-interaction-color {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    &__background {
+        display: block;
+        width: 100%;
+        height: unitize(80px);
+        background: red;
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}

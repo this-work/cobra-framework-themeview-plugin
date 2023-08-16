@@ -1,0 +1,22 @@
+////
+///
+/// example-skeleton Styles
+///
+/// @group Themeview
+///
+////
+
+.example-skeleton {
+    // #region [Block]
+    $module: &;
+    // #endregion
+
+    // #region [Element]
+    .c-image__canvas-skeleton--hide::before {
+        opacity: 1 !important;
+    }
+    // #endregion
+
+    // #region [Modifier]
+    // #endregion
+}
